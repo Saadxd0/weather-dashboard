@@ -13,7 +13,7 @@ def show_weather():
         wind_label.config(text=f"Wind Speed: {data['wind']['speed']} m/s")
         condition_label.config(text=f"Condition: {data['weather'][0]['description'].title()}")
     else:
-        messagebox.showerror("Error", "City not found or API issue!")
+        messagebox.showerror("Error", "City is not found or API issue!")
 
 # GUI
 root = tk.Tk()
